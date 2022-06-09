@@ -15,4 +15,20 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('home');
+Route::get('/chisiamo', function () {
+    return view('chisiamo');
+})->name('chisiamo');
+Route::get('/dovesiamo', function () {
+    return view('dovesiamo');
+})->name('dovesiamo');
+Route::get('/franchising', function () {
+    return view('franchising');
+})->name('franchising');
+Route::get('/prodotti', function () {
+    return view('prodotti');
+})->name('prodotti');
+Route::get('/shoponline', function () {
+    return view('shoponline');
+})->name('shoponline');
+
